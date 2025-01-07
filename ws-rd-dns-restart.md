@@ -1,4 +1,4 @@
-Expected Output:
+Expected Output: "resp": "DNS/DHCP service has been restarted."
 
 Results:
 [
