@@ -1,3 +1,14 @@
+"""
+
+Velocloud Orchestrator API - v1 
+diagnosticBundle/getDiagnosticBundles
+
+Generate and download diagnostics bundle
+
+Reference: Unpublished API
+
+"""
+
 import asyncio
 import os
 import json
