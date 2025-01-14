@@ -1,7 +1,7 @@
 """
 
 Velocloud Orchestrator API - v1 
-/metrics/getEdgeStatusSeries - /metrics/getEdgeStatusSeries
+/metrics/getEdgeStatusSeries
 
 Used to get the number of tunnels on edge
 
@@ -63,7 +63,7 @@ async def get_all_edges(api_client, enterprise_id):
     return response
 
 
-async def get_edge_status_metrics(api_client, edges, enterprise_id, hours):
+async def get_edge_tunnel_status_metrics(api_client, edges, enterprise_id, hours):
     """
     Get Edge Metrics
     """
@@ -142,7 +142,7 @@ async def main():
     # Get edge metrics for a specific timeframe (in hr) using APIv2
     
     timeframe = 24
-    response = await get_edge_status_metrics(api_client, edges, enterprise_id, timeframe)
+    response = await get_edge_tunnel_status_metrics(api_client, edges, enterprise_id, timeframe)
     
     if "error" in response:
         print(f"Encountered the following error: {response['error']}")
