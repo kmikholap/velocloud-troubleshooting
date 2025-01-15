@@ -1,3 +1,13 @@
+"""
+
+Retrive all enterprises from the Velocloud Orchestrator using operator level token
+Iterate over each enetrprise and get top 10 events in the specified timeframe
+
+Reference: https://developer.broadcom.com/xapis/velocloud-orchestrator-api/latest/
+
+"""
+
+
 import asyncio
 import os
 import json
