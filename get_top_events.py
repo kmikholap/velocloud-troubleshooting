@@ -16,7 +16,7 @@ def log_message(message):
 
 async def get_enterprises(api_client):
     """
-    Get all enterprises. Authenticate implicitly during this call.
+    Get all enterprises
     """
     log_message("Authenticating and retrieving enterprises...")
     payload = {
